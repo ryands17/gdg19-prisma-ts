@@ -1,0 +1,33 @@
+{
+  "name": "graphql-auth",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --no-notify --respawn --transpileOnly ./src",
+    "seed": "ts-node prisma/seed.ts",
+    "postinstall": "prisma2 generate",
+    "build": "tsc ."
+  },
+  "dependencies": {
+    "bcrypt": "3.0.6",
+    "graphql-shield": "5.7.3",
+    "graphql-yoga": "1.18.3",
+    "jsonwebtoken": "8.5.1",
+    "nexus": "0.12.0-beta.12"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "3.0.0",
+    "@types/jsonwebtoken": "8.3.4",
+    "@types/node": "12.7.11",
+    "prettier": "^1.18.2",
+    "prisma2": "2.0.0-preview013.3",
+    "ts-node": "8.4.1",
+    "ts-node-dev": "1.0.0-pre.43",
+    "typescript": "3.6.3",
+    "typesync": "^0.6.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
