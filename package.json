@@ -6,7 +6,7 @@
     "seed": "ts-node prisma/seed.ts",
     "postinstall": "npm run generate",
     "generate": "prisma2 generate",
-    "build": "tsc ."
+    "build": "tsc"
   },
   "dependencies": {
     "bcrypt": "3.0.6",
